@@ -1,0 +1,232 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/pngtree-lush-tropical-plant-exhibiting-a-beautiful-nature-texture-and-pattern-image_13703680.png');
+}
+
+.row{
+    display:flex;
+  
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins-ExtraBold.ttf') format('truetype');
+}
+
+.card-1 {
+    flex:1;
+    background-color: #1a5a06;
+    color: white;
+    display:flexbox;
+    flex-direction: column;
+    height: 85vh;
+    padding: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 100, 0, 0.1);
+    display: inline-block;
+    font-family: 'Poppins',sans-serif;
+
+}
+.card-1 h2 {
+    margin-bottom: 5px;
+    color: #333;
+}
+.card-1 label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+
+
+.card-1 img {
+    max-width: 100%;
+    
+    display: block;
+}
+
+.card1-img{
+    height: 400px;
+    object-fit:contain;
+    position: absolute;
+    right: 43%;
+    bottom: 7%;
+    z-index: 4;
+    
+
+}
+
+
+.card2-img {
+    height: 320px;
+    object-fit:contain;
+    position: absolute;
+    right: 69%;
+    bottom: 7%;
+    transform: scaleX(-1);
+    z-index: 3;
+
+
+
+
+}
+
+.card3-img{
+    
+    height: 260px;
+    object-fit:contain;
+    position: absolute;
+    right: 61%;
+    bottom: 13%;
+    transform: rotate(-39deg);
+    z-index: 2; 
+    
+}
+
+.card4-img{
+    
+    height: 280px;
+    object-fit:contain;
+    position: absolute;
+    right: 72%;
+    bottom: 27%;
+    transform: scaleX(-1);
+    z-index: 1;
+}
+
+.card-2 {
+    flex: 1;
+    width: 600px;
+    height: 85vh;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 100, 0, 0.1);
+    text-align: center;
+    margin-right: 80px;
+    display:inline-block;
+    
+}  
+
+/* WRAPPER ALWAYS CENTERED */
+.scale-wrapper {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;     /* ensures it centers vertically */
+}
+
+
+/* ===== PHONE VIEW (480px) ===== */
+@media (max-width: 480px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;   /* centers the scale-wrapper */
+        align-items: flex-start;   /* keeps it at the top */
+        min-height: 100vh;
+    }
+
+    .scale-wrapper {
+        transform: scale(0.70);
+        transform-origin: top center;
+
+        /* This centers WIDTH even after scaling */
+        width: fit-content;   /* important! */
+        margin: 0 auto;       /* center horizontally */
+    }
+
+
+
+    /* leaf images — SLIGHTLY smaller */
+    .card1-img,
+    .card2-img,
+    .card3-img,
+    .card4-img {
+        height: 180px !important;    /* not too small */
+    }
+
+    .row {
+        align-items: center;
+        justify-content: center;
+        
+    }    
+
+}
+
+/* ===== SMALL PHONES (360px) ===== */
+@media (max-width: 360px) {
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+    .scale-wrapper {
+        transform: scale(0.63);
+        margin-top: 30%;
+        transform-origin: top center;
+        width: 160%;
+        min-height: 100vh;
+    }
+
+    .card1-img,
+    .card2-img,
+    .card3-img,
+    .card4-img {
+        height: 160px !important;
+    }
+}
+
+
+label{
+    display:flex;
+    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    color: #333;
+    margin-left: 18px;
+    font-family: 'Poppin', sans-serif;
+
+}
+
+ 
+input {
+    width: 90%;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 18px;
+    
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+button {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 50px;
+    
+}
+
+
