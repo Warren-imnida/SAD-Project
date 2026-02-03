@@ -1,89 +1,205 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-  <nav>
-  <div class="container-fluid">
-    <a class="navbar-brand">
-        <img src="/image-removebg-preview(9).png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        PLANTCARE      
-    </a>
-  </div>
-  </nav>
-  
-  <aside>
-    <div class="nav-sidebar">
-        <div class="button">
-          <button class="botn">REal
-            <img src="/image-removebg-preview(11).png" alt="Logo" width="35" height="33" class="menu-img">
-          </button>
-        </div>
-        <div class="button">
-          <button class="botn">
-            <img src="/image-removebg-preview(12).png" alt="Logo" width="35" height="33" class="menu-img">
-          </button>
-        </div>
-        <div class="button">
-          <button class="botn">
-            <img src="/image-removebg-preview(13).png" alt="Logo" width="35" height="33" class="menu-img">
-          </button>
-        </div>
-    </div>
-    </aside>
-    
-  <main>
-    <div class="chart-grid-container">
-      <div class="chart-container">
-        Temperatures
-        <canvas id="myChart1"></canvas>
-      </div>
-
-      <div class="chart-container">
-        <canvas id="myChart2"></canvas>
-      </div>
-
-      <div class="chart-container">
-        <canvas id="myChart3"></canvas>
-      </div>
-
-      <div class="chart-container">
-        <canvas id="myChart4"></canvas>
+<div class="dashboard">
+  <header class="top-nav">
+    <div class="brand">
+      <div class="logo">AI</div>
+      <div>
+        <p class="product">AI-Assisted Feedback Hub</p>
+        <p class="subtitle">College University Offices</p>
       </div>
     </div>
-  </main>
 
-</body>
-
-<footer class="text-white pt-4 pb-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h5>About</h5>
-        <p>Short description here...</p>
+    <div class="nav-actions">
+      <label class="search">
+        <span class="sr-only">Search submissions</span>
+        <input type="text" placeholder="Search submissions, offices, tags" />
+      </label>
+      <button class="button primary">New Suggestion</button>
+      <button class="button ghost">Export</button>
+      <div class="user-pill">
+        <span class="user-dot"></span>
+        Admin Desk
       </div>
+    </div>
+  </header>
 
-      <div class="col-md-4">
-        <h5>Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="" class="text-white">Home</a></li>
-          <li><a href="" class="text-white">Contact</a></li>
+  <aside class="sidebar">
+    <nav class="menu">
+      <p class="menu-title">Dashboard</p>
+      <a class="menu-link active" href="/dashboard">Overview</a>
+      <a class="menu-link" href="/dashboard">Submissions</a>
+      <a class="menu-link" href="/dashboard">AI Summaries</a>
+      <a class="menu-link" href="/dashboard">Categories</a>
+      <a class="menu-link" href="/dashboard">Reports</a>
+      <a class="menu-link" href="/dashboard">Settings</a>
+    </nav>
+
+    <div class="sidebar-card">
+      <h3>Office Coverage</h3>
+      <p>MIS, Library, and University Dormitory feedback is tracked in real time.</p>
+      <div class="pill-group">
+        <span class="pill">MIS</span>
+        <span class="pill">Library</span>
+        <span class="pill">Dormitory</span>
+      </div>
+    </div>
+  </aside>
+
+  <main class="content">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">AI-powered insights</p>
+        <h1>Digital Feedback &amp; Suggestion Box System</h1>
+        <p>
+          Collect student concerns, auto-categorize by office, and deliver AI summaries that highlight
+          urgent needs and emerging trends.
+        </p>
+        <div class="hero-actions">
+          <button class="button primary">Review submissions</button>
+          <button class="button ghost">View AI digest</button>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h2>Today&#39;s Snapshot</h2>
+        <div class="snapshot-grid">
+          <div>
+            <p class="snapshot-value">128</p>
+            <p class="snapshot-label">New suggestions</p>
+          </div>
+          <div>
+            <p class="snapshot-value">92%</p>
+            <p class="snapshot-label">Auto-categorized</p>
+          </div>
+          <div>
+            <p class="snapshot-value">18</p>
+            <p class="snapshot-label">Critical concerns</p>
+          </div>
+        </div>
+        <p class="snapshot-note">Average response time is down by 12% this week.</p>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <p class="stat-title">Total submissions</p>
+        <h3>1,428</h3>
+        <p class="stat-meta">+14% vs last month</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-title">Resolved concerns</p>
+        <h3>1,012</h3>
+        <p class="stat-meta">71% resolution rate</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-title">AI summaries sent</p>
+        <h3>36</h3>
+        <p class="stat-meta">Daily digest to office leads</p>
+      </article>
+      <article class="stat-card">
+        <p class="stat-title">Active students</p>
+        <h3>624</h3>
+        <p class="stat-meta">Last 30 days</p>
+      </article>
+    </section>
+
+    <section class="insights-grid">
+      <article class="insight-card">
+        <h3>AI Summary Highlights</h3>
+        <ul>
+          <li>Library requests focus on extended weekend hours.</li>
+          <li>MIS concerns point to Wi-Fi outages in Building B.</li>
+          <li>Dormitory feedback highlights air-conditioning repairs.</li>
         </ul>
+        <button class="button link">View full summary</button>
+      </article>
+      <article class="insight-card">
+        <h3>Auto-Categorization</h3>
+        <div class="progress">
+          <div>
+            <p>MIS Office</p>
+            <div class="bar"><span style="width: 62%"></span></div>
+          </div>
+          <div>
+            <p>Library</p>
+            <div class="bar"><span style="width: 78%"></span></div>
+          </div>
+          <div>
+            <p>Dormitory</p>
+            <div class="bar"><span style="width: 54%"></span></div>
+          </div>
+        </div>
+      </article>
+      <article class="insight-card">
+        <h3>Response Queue</h3>
+        <p class="queue-value">42 open tickets</p>
+        <p>Prioritize critical dormitory requests and MIS network reports.</p>
+        <button class="button ghost">Open queue</button>
+      </article>
+    </section>
+
+    <section class="charts-grid">
+      <article class="chart-card">
+        <h3>Weekly Submissions</h3>
+        <canvas id="myChart1"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Sentiment Trend</h3>
+        <canvas id="myChart2"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Office Distribution</h3>
+        <canvas id="myChart3"></canvas>
+      </article>
+      <article class="chart-card">
+        <h3>Resolution Time</h3>
+        <canvas id="myChart4"></canvas>
+      </article>
+    </section>
+
+    <section class="table-card">
+      <div class="table-header">
+        <div>
+          <h3>Recent Submissions</h3>
+          <p>Latest student feedback ready for review.</p>
+        </div>
+        <button class="button ghost">View all</button>
       </div>
-
-      <div class="col-md-4">
-        <h5>Developed by</h5>
-        <p>DJJS-BSIT AI33</p>
+      <div class="table">
+        <div class="table-row table-head">
+          <span>Student</span>
+          <span>Office</span>
+          <span>Category</span>
+          <span>Status</span>
+          <span>Received</span>
+        </div>
+        <div class="table-row">
+          <span>J. Santos</span>
+          <span>Library</span>
+          <span>Facilities</span>
+          <span class="status urgent">Urgent</span>
+          <span>2 hrs ago</span>
+        </div>
+        <div class="table-row">
+          <span>M. Alvarez</span>
+          <span>MIS</span>
+          <span>Connectivity</span>
+          <span class="status in-progress">In progress</span>
+          <span>5 hrs ago</span>
+        </div>
+        <div class="table-row">
+          <span>K. Villanueva</span>
+          <span>Dormitory</span>
+          <span>Maintenance</span>
+          <span class="status new">New</span>
+          <span>1 day ago</span>
+        </div>
+        <div class="table-row">
+          <span>S. Mercado</span>
+          <span>Library</span>
+          <span>Service</span>
+          <span class="status resolved">Resolved</span>
+          <span>2 days ago</span>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
-
-</html>
-
-
+    </section>
+  </main>
+</div>
